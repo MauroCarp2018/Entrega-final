@@ -1,0 +1,38 @@
+.navbar {
+    width: 100%;
+}
+
+.navbar-brand {
+    color: $secondaryColor;
+    padding-top: 5rem;
+    text-decoration: solid;
+    font-size: 40px;
+    font-family: $fontDela;
+}
+
+.text-pop-up-top{-webkit-animation:text-pop-up-top .5s cubic-bezier(.25,.46,.45,.94) both;animation:text-pop-up-top .5s cubic-bezier(.25,.46,.45,.94) both}
+
+@-webkit-keyframes text-pop-up-top{0%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-transform-origin:50% 50%;transform-origin:50% 50%;text-shadow:none}100%{-webkit-transform:translateY(-50px);transform:translateY(-50px);-webkit-transform-origin:50% 50%;transform-origin:50% 50%;text-shadow:0 1px 0 #ccc,0 2px 0 #ccc,0 3px 0 #ccc,0 4px 0 #ccc,0 5px 0 #ccc,0 6px 0 #ccc,0 7px 0 #ccc,0 8px 0 #ccc,0 9px 0 #ccc,0 50px 30px rgba(0,0,0,.3)}}@keyframes text-pop-up-top{0%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-transform-origin:50% 50%;transform-origin:50% 50%;text-shadow:none}100%{-webkit-transform:translateY(-50px);transform:translateY(-50px);-webkit-transform-origin:50% 50%;transform-origin:50% 50%;text-shadow:0 1px 0 #ccc,0 2px 0 #ccc,0 3px 0 #ccc,0 4px 0 #ccc,0 5px 0 #ccc,0 6px 0 #ccc,0 7px 0 #ccc,0 8px 0 #ccc,0 9px 0 #ccc,0 50px 30px rgba(0,0,0,.3)}}
+
+.nav-item {
+    display: inline-block;
+    border-radius: 80px;
+    background-color: $mainColor;
+    margin: 10px 10px 10px 10px; 
+    padding: 8px 35px;
+    font-size: 18px;
+    width: 100%;
+}
+
+@for $item from 1 through 5 {
+
+    .nav-item#{$item}{
+        animation-delay:$item*0.7s;
+    }
+}
+
+
+ @-webkit-keyframes roll-in-left{0%{-webkit-transform:translateX(-800px) rotate(-540deg);transform:translateX(-800px) rotate(-540deg);opacity:0}100%{-webkit-transform:translateX(0) rotate(0deg);transform:translateX(0) rotate(0deg);opacity:1}}@keyframes roll-in-left{0%{-webkit-transform:translateX(-800px) rotate(-540deg);transform:translateX(-800px) rotate(-540deg);opacity:0}100%{-webkit-transform:translateX(0) rotate(0deg);transform:translateX(0) rotate(0deg);opacity:1}}
+
+
+/* sección HEADER común a todas las html */
